@@ -57,24 +57,15 @@ In short, RHEL/CentOS 6 should work, as well as anything more recent.
 
 Get the source code:
 
-    git clone git://github.com/logcabin/logcabin.git
+    git clone https://github.com/blentle/logcabin.git
     cd logcabin
     git submodule update --init
 
 
 Build the client library, server binary, and unit tests:
 
-    scons
-
-For custom build environments, you can place your configuration variables in
-`Local.sc`. For example, that file might look like:
-
-    BUILDTYPE='DEBUG'
-    CXXFLAGS=['-Wno-error']
-
-To see which configuration parameters are available, run:
-
-    scons --help
+    cmake CMakeLists.txt
+    make && make install
 
 Running basic tests
 ===================
