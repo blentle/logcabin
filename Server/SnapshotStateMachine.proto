@@ -18,7 +18,7 @@
  * This file contains the formats for dumping out the state machine into
  * snapshots.
  */
-
+syntax = "proto2";
 package LogCabin.Server.SnapshotStateMachine;
 
 import "build/Protocol/Client.proto";

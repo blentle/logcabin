@@ -17,7 +17,7 @@
  * \file
  * Contains the format for SegmentedLog's metadata files.
  */
-
+syntax = "proto2";
 package LogCabin.Storage.SegmentedLogMetadata;
 
 import "build/Protocol/RaftLogMetadata.proto";
